@@ -1,0 +1,415 @@
+
+AVRGCC1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000254  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .stab         000006e4  00000000  00000000  000002a8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  2 .stabstr      00000085  00000000  00000000  0000098c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_aranges 00000040  00000000  00000000  00000a11  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_pubnames 000000c2  00000000  00000000  00000a51  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000800  00000000  00000000  00000b13  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000034f  00000000  00000000  00001313  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000500  00000000  00000000  00001662  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000b0  00000000  00000000  00001b64  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000370  00000000  00000000  00001c14  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000020a  00000000  00000000  00001f84  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_pubtypes 000000df  00000000  00000000  0000218e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 a2 00 	jmp	0x144	; 0x144 <__ctors_end>
+   4:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+   8:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+   c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  10:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  14:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  18:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  1c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  20:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  24:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  28:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  2c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  30:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  34:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  38:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  3c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  40:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  44:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  48:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  4c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  50:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  54:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  58:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  5c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  60:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  64:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  68:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  6c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  70:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  74:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  78:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  7c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  80:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  84:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  88:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  8c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  90:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  94:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  98:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  9c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  a0:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  a4:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  a8:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  ac:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  b0:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  b4:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  b8:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  bc:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  c0:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  c4:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  c8:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  cc:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  d0:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  d4:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  d8:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  dc:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  e0:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  e4:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  e8:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  ec:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  f0:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  f4:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  f8:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+  fc:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 100:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 104:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 108:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 10c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 110:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 114:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 118:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 11c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 120:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 124:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 128:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 12c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 130:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 134:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 138:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 13c:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+ 140:	0c 94 ae 00 	jmp	0x15c	; 0x15c <__bad_interrupt>
+
+00000144 <__ctors_end>:
+ 144:	11 24       	eor	r1, r1
+ 146:	1f be       	out	0x3f, r1	; 63
+ 148:	cf ef       	ldi	r28, 0xFF	; 255
+ 14a:	df e3       	ldi	r29, 0x3F	; 63
+ 14c:	de bf       	out	0x3e, r29	; 62
+ 14e:	cd bf       	out	0x3d, r28	; 61
+ 150:	00 e0       	ldi	r16, 0x00	; 0
+ 152:	0c bf       	out	0x3c, r16	; 60
+ 154:	0e 94 b0 00 	call	0x160	; 0x160 <main>
+ 158:	0c 94 28 01 	jmp	0x250	; 0x250 <_exit>
+
+0000015c <__bad_interrupt>:
+ 15c:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000160 <main>:
+
+#include <avr/io.h>
+#include "util/delay.h"
+
+int main(void)
+{
+ 160:	1f 93       	push	r17
+	init_32M_clock(); //Inisialiserer 32MHz klokke
+ 162:	0e 94 ca 00 	call	0x194	; 0x194 <init_32M_clock>
+	init_buttons_and_leds(); //Inisialiserer knapper og leds
+ 166:	0e 94 22 01 	call	0x244	; 0x244 <init_buttons_and_leds>
+	
+    led_counter(); //Sjekker etter knapper om den skal telle opp eller ned
+ 16a:	0e 94 e4 00 	call	0x1c8	; 0x1c8 <led_counter>
+
+	uint8_t bryt;
+	
+	while(bryt != 0b00000111)
+ 16e:	0b c0       	rjmp	.+22     	; 0x186 <main+0x26>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 170:	8f e4       	ldi	r24, 0x4F	; 79
+ 172:	93 ec       	ldi	r25, 0xC3	; 195
+ 174:	01 97       	sbiw	r24, 0x01	; 1
+ 176:	f1 f7       	brne	.-4      	; 0x174 <main+0x14>
+ 178:	00 c0       	rjmp	.+0      	; 0x17a <main+0x1a>
+ 17a:	00 00       	nop
+	{		
+		_delay_ms(200);
+		flash_on_keypress();
+ 17c:	0e 94 dd 00 	call	0x1ba	; 0x1ba <flash_on_keypress>
+		bryt = getButtonInput();
+ 180:	0e 94 d9 00 	call	0x1b2	; 0x1b2 <getButtonInput>
+ 184:	18 2f       	mov	r17, r24
+	
+    led_counter(); //Sjekker etter knapper om den skal telle opp eller ned
+
+	uint8_t bryt;
+	
+	while(bryt != 0b00000111)
+ 186:	17 30       	cpi	r17, 0x07	; 7
+ 188:	99 f7       	brne	.-26     	; 0x170 <main+0x10>
+		
+	}
+	
+	while(1)
+	{
+		put_on_leds(0b00000111); //Siden den bit-shifter mot venstre m� led-bitsene settes p� samme m�te som buttons-bit
+ 18a:	87 e0       	ldi	r24, 0x07	; 7
+ 18c:	90 e0       	ldi	r25, 0x00	; 0
+ 18e:	0e 94 d4 00 	call	0x1a8	; 0x1a8 <put_on_leds>
+ 192:	fb cf       	rjmp	.-10     	; 0x18a <main+0x2a>
+
+00000194 <init_32M_clock>:
+#include "fys3240_led.h"
+#include "util/delay.h"
+
+void init_32M_clock(void)
+{	
+	OSC.CTRL = 0b00000010;
+ 194:	e0 e5       	ldi	r30, 0x50	; 80
+ 196:	f0 e0       	ldi	r31, 0x00	; 0
+ 198:	82 e0       	ldi	r24, 0x02	; 2
+ 19a:	80 83       	st	Z, r24
+	
+	while(OSC.STATUS & 0b00010 != 0b00010); //Masker status og fjerner bit vi ikke er interessert i. While for å kjøre helt til vi får flag.
+ 19c:	91 81       	ldd	r25, Z+1	; 0x01
+	
+	CCP = CCP_IOREG_gc; //Låser opp mux
+ 19e:	98 ed       	ldi	r25, 0xD8	; 216
+ 1a0:	94 bf       	out	0x34, r25	; 52
+	
+	CLK.CTRL = CLK_SCLKSEL_RC32K_gc; //Endrer inngang
+ 1a2:	80 93 40 00 	sts	0x0040, r24
+	//Låses automatisk
+}
+ 1a6:	08 95       	ret
+
+000001a8 <put_on_leds>:
+
+
+void put_on_leds(uint8_t value)
+{
+	PORTB_OUT = value << 4;	//Shifter 4 bit mot venstre for å lese av riktige bits
+ 1a8:	82 95       	swap	r24
+ 1aa:	80 7f       	andi	r24, 0xF0	; 240
+ 1ac:	80 93 24 06 	sts	0x0624, r24
+}
+ 1b0:	08 95       	ret
+
+000001b2 <getButtonInput>:
+
+uint8_t getButtonInput(void)
+{
+	uint8_t brytere;
+	brytere = PORTE_IN & 0b00001111; //Masker for å oppnå ønsket bits
+ 1b2:	80 91 88 06 	lds	r24, 0x0688
+	return brytere; //Returnerer knappen vi trykket på
+}
+ 1b6:	8f 70       	andi	r24, 0x0F	; 15
+ 1b8:	08 95       	ret
+
+000001ba <flash_on_keypress>:
+}
+
+uint8_t getButtonInput(void)
+{
+	uint8_t brytere;
+	brytere = PORTE_IN & 0b00001111; //Masker for å oppnå ønsket bits
+ 1ba:	80 91 88 06 	lds	r24, 0x0688
+}
+
+
+void put_on_leds(uint8_t value)
+{
+	PORTB_OUT = value << 4;	//Shifter 4 bit mot venstre for å lese av riktige bits
+ 1be:	82 95       	swap	r24
+ 1c0:	80 7f       	andi	r24, 0xF0	; 240
+ 1c2:	80 93 24 06 	sts	0x0624, r24
+
+
+void flash_on_keypress(void)
+{
+	put_on_leds(getButtonInput());
+}
+ 1c6:	08 95       	ret
+
+000001c8 <led_counter>:
+
+void led_counter(void)
+{
+	uint8_t count = 0;
+ 1c8:	80 e0       	ldi	r24, 0x00	; 0
+}
+
+uint8_t getButtonInput(void)
+{
+	uint8_t brytere;
+	brytere = PORTE_IN & 0b00001111; //Masker for å oppnå ønsket bits
+ 1ca:	90 91 88 06 	lds	r25, 0x0688
+ 1ce:	9f 70       	andi	r25, 0x0F	; 15
+	
+	while(1) 
+	{	
+		b_pressed = getButtonInput(); 
+		
+		if(b_pressed == 0b00001110) //Knapp CS0 teller oppover
+ 1d0:	9e 30       	cpi	r25, 0x0E	; 14
+ 1d2:	59 f4       	brne	.+22     	; 0x1ea <led_counter+0x22>
+ 1d4:	2f ef       	ldi	r18, 0xFF	; 255
+ 1d6:	30 e7       	ldi	r19, 0x70	; 112
+ 1d8:	42 e0       	ldi	r20, 0x02	; 2
+ 1da:	21 50       	subi	r18, 0x01	; 1
+ 1dc:	30 40       	sbci	r19, 0x00	; 0
+ 1de:	40 40       	sbci	r20, 0x00	; 0
+ 1e0:	e1 f7       	brne	.-8      	; 0x1da <led_counter+0x12>
+ 1e2:	00 c0       	rjmp	.+0      	; 0x1e4 <led_counter+0x1c>
+ 1e4:	00 00       	nop
+		{
+			_delay_ms(25); //Delay på 25ms
+			count++;
+ 1e6:	8f 5f       	subi	r24, 0xFF	; 255
+ 1e8:	0f c0       	rjmp	.+30     	; 0x208 <led_counter+0x40>
+		}
+		
+		if(b_pressed == 0b00001101) //Knapp CS1 teller nedover
+ 1ea:	9d 30       	cpi	r25, 0x0D	; 13
+ 1ec:	59 f4       	brne	.+22     	; 0x204 <led_counter+0x3c>
+		{
+			--count;
+ 1ee:	81 50       	subi	r24, 0x01	; 1
+ 1f0:	2f ef       	ldi	r18, 0xFF	; 255
+ 1f2:	30 e7       	ldi	r19, 0x70	; 112
+ 1f4:	42 e0       	ldi	r20, 0x02	; 2
+ 1f6:	21 50       	subi	r18, 0x01	; 1
+ 1f8:	30 40       	sbci	r19, 0x00	; 0
+ 1fa:	40 40       	sbci	r20, 0x00	; 0
+ 1fc:	e1 f7       	brne	.-8      	; 0x1f6 <led_counter+0x2e>
+ 1fe:	00 c0       	rjmp	.+0      	; 0x200 <led_counter+0x38>
+ 200:	00 00       	nop
+ 202:	02 c0       	rjmp	.+4      	; 0x208 <led_counter+0x40>
+			_delay_ms(25);
+		}
+		
+		if(b_pressed == 0b00000111) //Knapp CS3 avbryter løkka
+ 204:	97 30       	cpi	r25, 0x07	; 7
+ 206:	81 f0       	breq	.+32     	; 0x228 <led_counter+0x60>
+		{
+			break;
+		}
+		
+		put_on_leds(~count); //Slår av/på LED, ~ gjør om til binær telling
+ 208:	98 2f       	mov	r25, r24
+ 20a:	90 95       	com	r25
+}
+
+
+void put_on_leds(uint8_t value)
+{
+	PORTB_OUT = value << 4;	//Shifter 4 bit mot venstre for å lese av riktige bits
+ 20c:	92 95       	swap	r25
+ 20e:	90 7f       	andi	r25, 0xF0	; 240
+ 210:	90 93 24 06 	sts	0x0624, r25
+ 214:	2f ef       	ldi	r18, 0xFF	; 255
+ 216:	30 e7       	ldi	r19, 0x70	; 112
+ 218:	42 e0       	ldi	r20, 0x02	; 2
+ 21a:	21 50       	subi	r18, 0x01	; 1
+ 21c:	30 40       	sbci	r19, 0x00	; 0
+ 21e:	40 40       	sbci	r20, 0x00	; 0
+ 220:	e1 f7       	brne	.-8      	; 0x21a <led_counter+0x52>
+ 222:	00 c0       	rjmp	.+0      	; 0x224 <led_counter+0x5c>
+ 224:	00 00       	nop
+			break;
+		}
+		
+		put_on_leds(~count); //Slår av/på LED, ~ gjør om til binær telling
+		_delay_ms(25);
+	}
+ 226:	d1 cf       	rjmp	.-94     	; 0x1ca <led_counter+0x2>
+ 228:	08 95       	ret
+
+0000022a <init_buttons>:
+}
+
+void init_buttons(void)
+{
+	/* Initialize configuration of buttons */
+	PORTE.DIR = 0b00000000; //Deklarerer som innganger
+ 22a:	e0 e8       	ldi	r30, 0x80	; 128
+ 22c:	f6 e0       	ldi	r31, 0x06	; 6
+ 22e:	10 82       	st	Z, r1
+	PORTE.PIN0CTRL = 0b00011000; //Gjør pinnene til pull-up
+ 230:	88 e1       	ldi	r24, 0x18	; 24
+ 232:	80 8b       	std	Z+16, r24	; 0x10
+	PORTE.PIN1CTRL = 0b00011000; 
+ 234:	81 8b       	std	Z+17, r24	; 0x11
+	PORTE.PIN2CTRL = 0b00011000;
+ 236:	82 8b       	std	Z+18, r24	; 0x12
+	PORTE.PIN3CTRL = 0b00011000;
+ 238:	83 8b       	std	Z+19, r24	; 0x13
+}
+ 23a:	08 95       	ret
+
+0000023c <init_leds>:
+
+void init_leds(void)
+{
+	/* Initialize configuration of LEDs */
+	PORTB.DIR = 0b11110000; //Deklarerer 
+ 23c:	80 ef       	ldi	r24, 0xF0	; 240
+ 23e:	80 93 20 06 	sts	0x0620, r24
+}
+ 242:	08 95       	ret
+
+00000244 <init_buttons_and_leds>:
+
+void init_buttons_and_leds(void)
+{
+	init_buttons();
+ 244:	0e 94 15 01 	call	0x22a	; 0x22a <init_buttons>
+}
+
+void init_leds(void)
+{
+	/* Initialize configuration of LEDs */
+	PORTB.DIR = 0b11110000; //Deklarerer 
+ 248:	80 ef       	ldi	r24, 0xF0	; 240
+ 24a:	80 93 20 06 	sts	0x0620, r24
+
+void init_buttons_and_leds(void)
+{
+	init_buttons();
+	init_leds();
+ 24e:	08 95       	ret
+
+00000250 <_exit>:
+ 250:	f8 94       	cli
+
+00000252 <__stop_program>:
+ 252:	ff cf       	rjmp	.-2      	; 0x252 <__stop_program>

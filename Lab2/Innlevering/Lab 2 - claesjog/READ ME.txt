@@ -1,0 +1,9 @@
+//---------------
+
+Gå til Lab 2 - claesjog\AVRGCC2\AVRGCC2
+
+Åpne AVRGCC2.avrgccproj
+
+Hvis du skal kjøre programmet direkte på XMEGA
+så er det bare å laste over så kjører hele programmet
+automatisk.
