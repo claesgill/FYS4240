@@ -1,9 +1,5 @@
 /* 
-Author       : Bent Furevik/Snorre Bjørnstad
-Company      : University of Oslo
-File name    : fys3240_lab1.h
-Date         : 23.12.2011
-Revised		 : 02.02.2015
+Author       : Claes Gill
 Project      : FYS3240 Lab1 
 Function     : Code for a microcontrollerprogram flashing leds according to pushbuttons 
 */
