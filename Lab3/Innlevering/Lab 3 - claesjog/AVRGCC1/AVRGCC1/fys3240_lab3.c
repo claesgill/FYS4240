@@ -1,10 +1,5 @@
 /* 
-Author       : Bent Furevik
-Company      : University of Oslo
-File name    : fys3240_lab3.c
-Date         : 23.12.2011
-Project      : FYS3240 Lab3
-Function     : Precode for a microcontrollerprogram interfacing the ADC
+Author       : Claes Gill
 */
 
 
@@ -61,7 +56,7 @@ void ADCBInit(void)
 	/* Code for initializing ADCB here */
 	ADCB.CH0.CTRL = 0b00000001;		 //Singelended
 	ADCB.CTRLA = 0b01;				 //Enabler ADC
-	ADCB.CTRLB = 0b00001100;		 //Setter Freerunmode - kjøres kontinuerlig
+	ADCB.CTRLB = 0b00001100;		 //Setter Freerunmode - kjÃ¸res kontinuerlig
 	ADCB.CH0.MUXCTRL = 0b00001000;	 //Konfigurerer PIN1, enabler potentiometeret
 	ADCB.PRESCALER = 0b00000100;	 //Setter klokke til 64
 	ADCB.REFCTRL = 0b00010001;		 //Setter TEMPERATUR sensor og setter Vcc til 1.1V
@@ -128,9 +123,9 @@ void show_value(uint8_t val){
 	/* Show value on LCD-screen. */
 	
 	LCD.CTRLG = POSITION_A0;
-	lcd_write_int(val%10); //Skriver 0-9 til posisjon A0 på display
+	lcd_write_int(val%10); //Skriver 0-9 til posisjon A0 pÃ¥ display
 	LCD.CTRLG = POSITION_A1;
-	lcd_write_int(val%100/10); //Skriver 0-9 til posisjon A1 på display
+	lcd_write_int(val%100/10); //Skriver 0-9 til posisjon A1 pÃ¥ display
 	LCD.CTRLG = POSITION_A2;
-	lcd_write_int(val%1000/100); //Skriver 0-9 til posisjon A2 på display
+	lcd_write_int(val%1000/100); //Skriver 0-9 til posisjon A2 pÃ¥ display
 }
